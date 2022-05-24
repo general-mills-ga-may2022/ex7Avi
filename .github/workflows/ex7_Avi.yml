@@ -1,7 +1,7 @@
 name: ex7_Avi
-    on: [push]
-    jobs:
-      check-bats-version:
+on: [push]
+jobs:
+    check-bats-version:
         runs-on: ubuntu-latest
         steps:
           - uses: actions/checkout@v3
@@ -10,3 +10,4 @@ name: ex7_Avi
               node-version: '14'
           - run: npm install -g bats
           - run: bats -v
+          
