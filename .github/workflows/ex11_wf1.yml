@@ -1,3 +1,5 @@
+name: ex11_Avi
+on: [push,workflow_dispatch]
 jobs:
   vm:
     runs-on: ubuntu-latest
