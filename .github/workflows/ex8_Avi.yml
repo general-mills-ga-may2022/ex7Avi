@@ -27,3 +27,14 @@ jobs:
         with:
           name: output-log-file
           path: output.log
+  example-job:
+    runs-on: ubuntu-latest
+    name: Download output
+    steps:
+      - name: Download a single artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: output-log-file
+      - shell: bash
+        run: |
+         	ls output-log-file
