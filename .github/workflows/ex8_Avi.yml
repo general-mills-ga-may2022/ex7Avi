@@ -15,7 +15,7 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
-  example-job:
+  Upload-job:
     runs-on: ubuntu-latest
     name: Save output
     steps:
@@ -27,7 +27,7 @@ jobs:
         with:
           name: output-log-file
           path: output.log
-  example-job:
+  Download-job:
     runs-on: ubuntu-latest
     name: Download output
     steps:
